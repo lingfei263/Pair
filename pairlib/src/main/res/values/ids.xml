@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="pair_divider_allowed_below">false</item>
+    <item type="id" name="pair_divider_allowed_above">false</item>
+</resources>

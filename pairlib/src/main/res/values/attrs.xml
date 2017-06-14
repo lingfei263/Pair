@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="Pair">
+        <attr name="id" format="integer" />
+        <attr name="icon" />
+        <attr name="key" format="string" />
+        <attr name="enable" format="boolean" />
+        <attr name="visible" format="boolean" />
+        <attr name="description" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseTextPairItem">
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonPairItem">
+        <attr name="text" />
+    </declare-styleable>
+
+    <declare-styleable name="EdiTextPairItem">
+        <attr name="text" />
+        <attr name="hint" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PairCatalog">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="FieldPairItem">
+        <attr name="exp" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TwoStatePairItem">
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PreferenceAction">
+        <attr name="key" />
+    </declare-styleable>
+
+    <declare-styleable name="ActivityAction">
+        <attr name="targetClass" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ImagePairItem">
+        <attr name="resId" format="integer" />
+        <attr name="url" format="string" />
+        <attr name="width" format="dimension" />
+        <attr name="height" />
+    </declare-styleable>
+
+</resources>

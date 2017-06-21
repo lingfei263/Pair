@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PairGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pair="http://schemas.android.com/apk/res-auto">
+    <PairCatalog pair:title="edittext">
+        <EditTextPairItem
+            pair:hint="hint文本"
+            pair:key="编辑框"
+            pair:text="默认文本" />
+    </PairCatalog>
+    <PairCatalog pair:title="我是一组有图标的">
+        <TextPairItem
+            pair:icon="@drawable/find_more_friend_scan"
+            pair:key="扫一扫" />
+        <TextPairItem
+            pair:icon="@drawable/find_more_friend_photograph_icon"
+            pair:key="朋友圈" />
+        <TextPairItem
+            pair:icon="@drawable/find_more_friend_shake"
+            pair:key="摇一摇" />
+    </PairCatalog>
+
+    <PairCatalog pair:title="拦截器测试">
+        <TextPairItem
+            pair:description="之前的文本为：朋友圈"
+            pair:icon="@drawable/find_more_friend_photograph_icon"
+            pair:id="@+id/pair_interceptor"
+            pair:key="拦截器设置的文本"
+            pair:text="朋友圈" />
+        <TextPairItem
+            pair:description="点我可以打开对话框：朋友圈"
+            pair:id="@+id/pair_dialog"
+            pair:key="对话框"
+            pair:text="对话框" />
+        <TextPairItem
+            pair:description="activity action的方式"
+            pair:key="activity"
+            pair:text="进入新的activity">
+            <PairActivityAction pair:targetClass="cn.ffb.pair.sample.RecyclerActivity"></PairActivityAction>
+        </TextPairItem>
+        <TextPairItem
+            pair:description="intent action的方式"
+            pair:key="activity"
+            pair:text="进入新的activity">
+            <PairIntentAction>
+                <intent
+                    android:targetClass="cn.ffb.pair.sample.RecyclerActivity"
+                    android:targetPackage="cn.ffb.pair.sample"></intent>
+            </PairIntentAction>
+        </TextPairItem>
+    </PairCatalog>
+    <PairCatalog pair:title="Preference测试">
+        <SwitchPairItem pair:key="测试Preference" />
+        <SwitchPairItem
+            pair:checked="false"
+            pair:key="开关">
+            <PairPreferenceAction pair:key="test" />
+        </SwitchPairItem>
+        <CheckPairItem
+            pair:checked="true"
+            pair:key="选择框" />
+    </PairCatalog>
+    <PairCatalog pair:title="没图标的">
+        <TextPairItem
+            pair:key="没有图标"
+            pair:text="没有图标的文本哦" />
+        <TextPairItem
+            pair:id="@+id/pair_date_format"
+            pair:key="这是一个日期格式化的例子"
+            pair:text="待完成" />
+        <ImagePairItem
+            pair:key="后面是一张图片"
+            pair:resId="@drawable/ic_discovery_templet_shop" />
+    </PairCatalog>
+    <PairCatalog pair:title="这是一个数据绑定的例子">
+        <FieldPairItem
+            pair:exp="${username}"
+            pair:id="@+id/pair_field_username"
+            pair:key="用户名" />
+        <FieldPairItem
+            pair:exp="${password}"
+            pair:id="@+id/pair_field_password"
+            pair:key="密码" />
+    </PairCatalog>
+</PairGroup>
